@@ -1,0 +1,5 @@
+<li id="postId<%= post.id %>"><%=post.title%>
+    <%= link_to 'show' ,post , remote: true %>
+    <%= link_to 'edit' ,edit_post_path(post) , remote: true %>
+    <%= link_to 'destroy', post_path(post) , data: {remote: true,confirm: "estay seguro?"},method: :delete%>
+</li>
